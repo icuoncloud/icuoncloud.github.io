@@ -1,105 +1,64 @@
-<!DOCTYPE html>
+
+<!doctype html>
 <html lang="en">
-<head>
-	<title>Login V17</title>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!--===============================================================================================-->	
-	<link rel="icon" type="image/png" href="images/icons/favicon.ico"/>
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/Linearicons-Free-v1.0.0/icon-font.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animate/animate.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/css-hamburgers/hamburgers.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/animsition/css/animsition.min.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="vendor/select2/select2.min.css">
-<!--===============================================================================================-->	
-	<link rel="stylesheet" type="text/css" href="vendor/daterangepicker/daterangepicker.css">
-<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="css/util.css">
-	<link rel="stylesheet" type="text/css" href="css/main.css">
-<!--===============================================================================================-->
-</head>
-<body>
-	
-	<div class="limiter">
-		<div class="container-login100">
-			<div class="wrap-login100">
-				<form class="login100-form validate-form">
-					<span class="login100-form-title p-b-34">
-						Account Login
-					</span>
-					
-					<div class="wrap-input100 rs1-wrap-input100 validate-input m-b-20" data-validate="Type user name">
-						<input id="first-name" class="input100" type="text" name="username" placeholder="User name">
-						<span class="focus-input100"></span>
-					</div>
-					<div class="wrap-input100 rs2-wrap-input100 validate-input m-b-20" data-validate="Type password">
-						<input class="input100" type="password" name="pass" placeholder="Password">
-						<span class="focus-input100"></span>
-					</div>
-					
-					<div class="container-login100-form-btn">
-						<button class="login100-form-btn">
-							Sign in
-						</button>
-					</div>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="Images/Asset 1.svg">
 
-					<div class="w-full text-center p-t-27 p-b-239">
-						<span class="txt1">
-							Forgot
-						</span>
+    <title>ICU on Cloud| Sign-in</title>
 
-						<a href="#" class="txt2">
-							User name / password?
-						</a>
-					</div>
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/sign-in/">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-					<div class="w-full text-center">
-						<a href="#" class="txt3">
-							Sign Up
-						</a>
-					</div>
-				</form>
+    <!-- Bootstrap core CSS -->
+    <!-- <link href="../../dist/css/bootstrap.min.css" rel="stylesheet"> -->
 
-				<div class="login100-more" style="background-image: url('images/bg-01.jpg');"></div>
-			</div>
-		</div>
-	</div>
-	
-	
+    <!-- Custom styles for this template -->
+    <link href="signin.css" rel="stylesheet">
 
-	<div id="dropDownSelect1"></div>
-	
-<!--===============================================================================================-->
-	<script src="vendor/jquery/jquery-3.2.1.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/animsition/js/animsition.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/bootstrap/js/popper.js"></script>
-	<script src="vendor/bootstrap/js/bootstrap.min.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/select2/select2.min.js"></script>
-	<script>
-		$(".selection-2").select2({
-			minimumResultsForSearch: 20,
-			dropdownParent: $('#dropDownSelect1')
-		});
-	</script>
-<!--===============================================================================================-->
-	<script src="vendor/daterangepicker/moment.min.js"></script>
-	<script src="vendor/daterangepicker/daterangepicker.js"></script>
-<!--===============================================================================================-->
-	<script src="vendor/countdowntime/countdowntime.js"></script>
-<!--===============================================================================================-->
-	<script src="js/main.js"></script>
 
-</body>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </head>
+
+  <body class="text-center">
+
+    <form class="form-signin">
+      <img class="mb-4" src="Images/Asset 1.svg" alt="" width="250" height="200">
+      <h1 class="h3 mb-3 font-weight-normal">Please sign in</h1>
+      <label for="inputEmail" class="sr-only">Email address</label>
+      <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
+      <label for="inputPassword" class="sr-only">Password</label>
+      <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
+      <div class="checkbox mb-3">
+        <label>
+          <input type="checkbox" value="remember-me"> Remember me
+        </label>
+      </div>
+      <button class="btn btn-lg btn-primary btn-block" data-toggle="popover" type="button" title="Error" data-content="User does not exist. Kindly contact Admin.">Sign in</button>
+      <!-- <button type="button" class="btn btn-lg btn-danger" data-toggle="popover" title="Popover title" data-content="And here's some amazing content. It's very engaging. Right?">Click to toggle popover</button> -->
+      <p class="mt-5 mb-3 text-muted">&copy; 2019-2020</p>
+    </form>
+
+<!-- <br>
+
+    <ul class=" clearfix bg-bubbles">
+  		<li></li>
+  		<li></li>
+  		<li></li>
+  		<li></li>
+  		<li></li>
+  		<li></li>
+  		<li></li>
+  		<li></li>
+  		<li></li>
+  		<li></li>
+  	</ul> -->
+    <script  src="js/script.js"></script>
+
+  </body>
 </html>
